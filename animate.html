@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animate practise</title>
+    <script src="jquery.js"></script>
+    <style>
+        #box {
+            width: 200px ;
+            background: yellow ;
+            font-size: 30px;
+            text-transform: uppercase ;
+            text-align: center;
+        }
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+   <a href="#" id="grow">grow</a>
+   <a href="#" id="move">move</a>
+   <a href="#" id="increaseSize">increase size</a>
+   <a href="#" id="doManyThings">do many things</a>
+   <div id="box">
+       <p >hello niranjan</p>
+   </div>
+    
+</body>
+
+<script>
+    $("document").ready(function(){
+        
+        $("#grow").on('click',function(){
+                   $("#box").animate({width :"500px",height :"500px"},1000),
+                   $("#box").html("<p>k hereko gadha</p>");
+                
+            });
+        
+         $("#move").on('click',function(){
+                   $("#box").animate({width :"500px",height :"500px",marginLeft: "600px"},1000)
+            });
+        
+         $("#increaseSize").on('click',function(){
+                   $("#box").animate({width :"500px",height :"500px",marginLeft: "600px", fontSize: "100px"},1000);
+                   $("#box").html("<p>k hereko gadha</p>");
+            });
+    });
+    
+       
+       
+
+    
+    
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+</html>
